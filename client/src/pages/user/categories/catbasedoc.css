@@ -1,0 +1,67 @@
+.doctor-imge{
+    display: flex;    
+}
+.doctor-imge img{
+    margin-top: 20px;
+    margin-left: 30px;
+    width:100px;
+    height: 100px;
+    object-fit: unset;
+    border-radius: 50%;
+}
+
+.doctor-detail{
+    margin-left: 70px;
+    margin-top: 10px;
+    line-height: 10px;
+}
+
+.experence-detail{
+    font-weight: 500;
+}
+.inside-div-class{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.doc-cat-btn{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.doc-cat-btn a{
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.book-appoin-date{
+margin-top: 30px;
+margin-left: 70px;
+width: 70rem;
+}
+
+.show-date-btn{
+    height: 40px;
+    width: 110px;
+    background-color: #fff;
+    color: rgb(21, 20, 20);
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5%;
+    font-size: smaller;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.show-date-btn:hover{
+    background-color: antiquewhite;
+    color: #ff9d01;
+    border: 1px solid #ff9d01;
+}
+.book{
+    background-color: red;
+    color: #fff;
+}

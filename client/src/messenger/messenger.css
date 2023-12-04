@@ -1,0 +1,58 @@
+.noChatopen{
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    color: rgb(210, 209, 209);
+    cursor: default;
+    text-align: center;
+}
+
+.serchInput{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.serchInput:focus{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.chatBoxTextarea{
+    height: 82px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(210, 209, 209);
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.fieldTextarea{
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(210, 209, 209) !important;
+    border-radius: 20px;
+    border: none !important;
+    outline: none;
+    padding: 10px 30px 15px 10px;
+    
+
+}
+
+.messageSendButton{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: #4761C2;
+    color: white;
+    border-radius: 50%;
+    border: 0px;
+    right: 0;
+    top: 18px;
+}
+

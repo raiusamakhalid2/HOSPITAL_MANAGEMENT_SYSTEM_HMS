@@ -1,0 +1,31 @@
+.topbar {
+    background-color: #FFFFFF;
+    color: #494949;
+    padding: 12px;
+  }
+  
+.topbarcontent{
+  display: flex;
+  justify-content: flex-end
+}
+
+  
+  .topbarcontent img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(60, 60, 60);
+  }
+
+  
+
+  /* .notification {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .notification:hover {
+    color: #ffcc00;
+  }  */
+

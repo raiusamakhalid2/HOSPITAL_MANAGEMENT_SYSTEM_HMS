@@ -1,0 +1,28 @@
+
+/*footer*/
+.footer {
+	background-color:#343A40	;
+	color:#5C5C5C;
+    bottom: 0;
+    width: 100%;
+}
+.footer-h a {
+    margin-left: 10px;
+	color:#5c5c5c;
+	text-decoration:none;
+}
+.footer-h a:hover {
+	color:#ff9d01   ;
+	transition:1s;
+}
+.footer a i {
+	float:right;
+	margin:10px;
+	font-size:30px;
+	color:#5c5c5c;
+}
+.footer a i:hover {
+	color:#ff9d01;
+	transition:1s;
+}
+/*--footer*/

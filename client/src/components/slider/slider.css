@@ -1,0 +1,12 @@
+.slider-img-size{
+    height: 650px;
+    object-fit: cover;
+}
+
+.d-md-block h4{
+    color: #ff9d01;
+    font-size: xx-large;
+}
+.d-md-block p{
+    color: #ffff;
+}

@@ -1,0 +1,30 @@
+.container{
+    margin-top: 80px;
+}
+
+.container h2{
+    text-align: center;
+    color: rgb(87, 87, 87);
+}
+
+
+
+.myconsern-item{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100px;
+}
+
+.myconsern-item i{
+    padding-top: 6px;
+    background-color: #4761C2;
+    color: #ffff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+    margin-top: 10px;
+}

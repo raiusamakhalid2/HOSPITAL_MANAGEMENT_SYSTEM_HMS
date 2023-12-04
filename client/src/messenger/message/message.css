@@ -1,0 +1,86 @@
+.message{
+    display: flex;
+    flex-direction: column;
+}
+
+.messageTop{
+    display: flex;
+}
+
+.messageImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.messageText{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4761C2;
+    max-width: 420px;
+    color: white;
+
+}
+
+.messageBottom{
+    font-size: 13px;
+}
+
+.message.own{
+    align-items: flex-end;
+}
+
+
+.message.own .messageText{
+    background-color: rgb(210, 209, 209);
+    color: black;
+}
+
+/* ......................message top........................... */
+
+.messageHader{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(210, 209, 209);
+
+}
+
+.messageHaderImgContainer{
+    position: relative;
+    margin-right: 10px;
+}
+
+.messageHaderImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.messageHaderBadge{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: lawngreen;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+}
+
+.videocallButton{
+    margin-left: 50vh;
+    font-size: x-large;
+    color: #4761C2;
+}
+
+.offline{
+    color: gray;
+}

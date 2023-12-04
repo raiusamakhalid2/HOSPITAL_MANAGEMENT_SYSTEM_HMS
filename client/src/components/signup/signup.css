@@ -1,0 +1,16 @@
+.phonenofield{
+    display: flex;
+}
+
+.logsign-logo{
+    margin-left: 80px;
+    font-size: 28px;
+    font-family: initial;
+    color: #ff9d01;
+    margin-bottom: 20px;
+}
+
+.logsign-logo i{
+    color: #4761C2 ;
+}
+
