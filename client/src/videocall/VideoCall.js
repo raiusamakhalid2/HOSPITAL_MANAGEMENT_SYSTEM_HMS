@@ -1,6 +1,6 @@
-import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton"
-import PhoneIcon from "@material-ui/icons/Phone"
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import PhoneIcon from '@mui/icons-material/Phone';
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Peer from "simple-peer";
 import { io } from "socket.io-client";
