@@ -142,6 +142,8 @@ function VideoCall() {
 				</div>
 			</div>
 			<div>
+
+        
 				{receivingCall && !callAccepted ? (
 						<div className="caller">
 						<h1 >{name} is calling...</h1>
