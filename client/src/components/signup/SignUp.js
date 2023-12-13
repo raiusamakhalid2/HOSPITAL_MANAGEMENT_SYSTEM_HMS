@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import bcrypt from "bcryptjs";
@@ -43,7 +43,7 @@ export default function SignUp() {
     }
 
   };
-  const navigate = useNavigate();
+
   const Submit = async (data) => {
     console.log("this is data:",name);
     const hashedPassword = bcrypt.hash(await data.password, 10);

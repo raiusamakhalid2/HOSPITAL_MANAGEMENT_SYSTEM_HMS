@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -13,7 +13,7 @@ const AddCategory = () => {
       name,
     };
 
-    const res = await axios.post("http://localhost:4000/category", data);
+     await axios.post("http://localhost:4000/category", data);
     try {
       navigate("/admin/catogery");
     } catch (error) {

@@ -44,14 +44,3 @@ export function AdminElement({ children }) {
   }
   
 
-  export function DoctorPatientElement({ children }) {
-    const { user } = useContext(AuthContext);
-    
-
-      if (user && user.Access_Type === USER_TYPES.DOCTOR || user.Access_Type === USER_TYPES.PATIENT) {
-        return <>{children}</>;
-      } else {
-        return <Navigate to="/login" replace={true} />;
-      }
-  }
-  

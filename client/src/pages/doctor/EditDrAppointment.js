@@ -1,13 +1,12 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router';
+import React, { useState } from 'react'
+import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
 export default function EditDrAppointment() {
     const { id } = useParams();
     const [status, setStatus] = useState("");
   
-    const navigate = useNavigate();
   
     // useEffect(() => {
     //   const getbyid = async () => {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useParams } from "react-router";
 import "../categories/catbasedoc.css";
 import { getTimeSlot } from "../../../functions/Functions";
 import AuthContext from "../../../context/AuthContext";
@@ -15,7 +15,6 @@ export default function BookAppointment() {
   const [date, setDate] = useState(formattedDate)
   const [bookedAppointment, setBookedAppointment] = useState([])
   const { user } = useContext(AuthContext);
-  const navigate = useNavigate()
 
   const handleButtonClick = (timeSlotId) => {
     setSelectedTimeSlot(timeSlotId);

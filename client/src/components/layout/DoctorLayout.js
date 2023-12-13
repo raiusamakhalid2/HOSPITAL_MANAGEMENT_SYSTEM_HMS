@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Topbar from '../topbar/Topbar'
 import Mainroutes from '../main-routes/Mainroutes'
-import { useLocation, useNavigate } from 'react-router';
+import { useLocation } from 'react-router';
 import DoctorSideBar from '../sidebar/DoctorSideBar';
 
 

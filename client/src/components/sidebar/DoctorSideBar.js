@@ -14,7 +14,6 @@ const DoctorSideBar = () => {
   const [activeLink, setActiveLink] = useState('/doctor'); 
 
   const handleNavLinkClick = (link) => {
-    console.log('Clicked link:', link); 
     setActiveLink(link);
   };
 

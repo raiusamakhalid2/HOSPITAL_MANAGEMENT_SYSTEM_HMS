@@ -58,7 +58,7 @@ export default function Navbar() {
 
       </ul>
       <form className="d-flex">
-        <button onClick={handlelogout} className="btn btn-outline-primary">LogOut<i className="fa-solid fa-right-from-bracket" style={{padding:"8px"}}></i></button>
+        <a onClick={handlelogout} className="btn btn-outline-primary">LogOut<i className="fa-solid fa-right-from-bracket" style={{padding:"8px"}}></i></a>
       </form>
     </div>
   </div>

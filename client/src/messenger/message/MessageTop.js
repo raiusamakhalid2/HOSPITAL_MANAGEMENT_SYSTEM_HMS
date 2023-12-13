@@ -10,8 +10,8 @@ export default function MessageTop({currentChat, onlineUsers}) {
 
     const videoCallPath = user.Access_Type === 'Doctor' ? '/doctor/videocall' : '/videocall';
 
-    const userOnline = onlineUsers && onlineUsers.find((user) => user.userId === currentChat && 
-    currentChat.doctor.email || currentChat && currentChat.patient.email)
+    const userOnline = onlineUsers && onlineUsers.find((user) => user.userId === (currentChat && 
+    currentChat.doctor.email) || (currentChat && currentChat.patient.email))
 
 
     useEffect(() =>{  

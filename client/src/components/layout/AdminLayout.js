@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SideBar from '../sidebar/AdminSideBar'
 import Topbar from '../topbar/Topbar'
 import Mainroutes from '../main-routes/Mainroutes'
-import { useLocation, useNavigate } from 'react-router';
-import { USER_TYPES } from '../protected/Protected';
-import { decodeToken } from 'react-jwt';
-import AuthContext from '../../context/AuthContext';
+import { useLocation } from 'react-router';
 
 export default function AdminLayout() {
 

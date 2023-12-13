@@ -39,11 +39,11 @@ export default function ProfileSetting() {
         setEmail(response.data.email);
         setPhone(response.data.phone);
         setGender(response.data.gender);
-        setExp(response.data.experience);
+        // setExp(response.data.experience);
         setImg(response.data.image);
-        setCategory(response.data.category);
-        setFee(response.data.fee);
-        setEducation(response.data.education);
+        // setCategory(response.data.category);
+        // setFee(response.data.fee);
+        // setEducation(response.data.education);
         setDescription(response.data.description);
         setAddress(response.data.address);
       } catch (err) {
@@ -85,7 +85,7 @@ export default function ProfileSetting() {
     formData.append("category", category);
     formData.append("address", address);
     formData.append("location", location);
-    formData.append("description", description)
+    formData.append("description", description) 
     formData.append("fee", fee);
     formData.append("image", img);
     formData.append("education", education);
@@ -241,7 +241,6 @@ export default function ProfileSetting() {
                   id="category"
                   name="category"
                   autoComplete="off"
-                  required
                   value={category}
                   onChange={(e) => {
                     const selectedValue = e.target.value;
@@ -288,7 +287,7 @@ export default function ProfileSetting() {
                 <textarea
                   className="textarea form-control"
                   name="description"
-                  id="form-address"
+                  id="form-description"
                   cols="6"
                   rows="6"
                   value={description}

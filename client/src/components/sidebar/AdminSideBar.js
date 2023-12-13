@@ -14,7 +14,6 @@ const AdminSideBar = () => {
   const [activeLink, setActiveLink] = useState('/admin/dashboard'); 
 
   const handleNavLinkClick = (link) => {
-    console.log('Clicked link:', link); 
     setActiveLink(link);
   };
 

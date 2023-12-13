@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import { useNavigate, useLocation } from "react-router-dom";
 import "./login.css";
 import Alert from "../alert/Alert";
 
@@ -44,8 +43,6 @@ export default function Login() {
       },
     },
   };
-
-  const location = useLocation();
 
   const Submit = async (data) => {
     try {

@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import "./chatonline.css"
-import AuthContext from "../../context/AuthContext"
 import axios from 'axios'
 
 export default function ChatOnline({ onlineUsers}) {

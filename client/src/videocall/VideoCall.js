@@ -1,27 +1,22 @@
 import Button from "@material-ui/core/Button"
 import IconButton from "@material-ui/core/IconButton"
-import TextField from "@material-ui/core/TextField"
-import AssignmentIcon from "@material-ui/icons/Assignment"
 import PhoneIcon from "@material-ui/icons/Phone"
-import { CopyToClipboard } from "react-copy-to-clipboard"
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Peer from "simple-peer";
 import { io } from "socket.io-client";
 import AuthContext from "../context/AuthContext";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import './videocall.css'
 
 const socket = io("ws://localhost:5000");
 
 function VideoCall() {
   const { user} = useContext(AuthContext)
-  const [me, setMe] = useState("");
   const [stream, setStream] = useState();
   const [receivingCall, setReceivingCall] = useState(false);
   const [caller, setCaller] = useState("");
   const [callerSignal, setCallerSignal] = useState();
   const [callAccepted, setCallAccepted] = useState(false);
-  const [idToCall, setIdToCall] = useState("");
   const [callEnded, setCallEnded] = useState(false);
   const [name, setName] = useState("");
 
@@ -29,7 +24,6 @@ function VideoCall() {
   const userTouser = location.state?.onlineuser;
 
 
-  const idRef = useRef();
   const userVideo = useRef();
   const myVideo = useRef();
   const connectionRef = useRef();
@@ -48,12 +42,7 @@ function VideoCall() {
   
     socket.emit("addUser", user?.email);
   
-    // socket.on("me", (id) => {
-    //   console.log("id:",id);
-    //   idRef.current = id;
-    //   setMe(id);
-    // });
-  
+ 
     socket.on("callUser", (data) => {
       setReceivingCall(true);
       setCaller(data.from);
@@ -63,7 +52,6 @@ function VideoCall() {
   
   },[]);
   
-console.log("idRef", idRef)
   const callUser = (id) => {
     const peer = new Peer({
       initiator: true,
@@ -140,27 +128,6 @@ console.log("idRef", idRef)
 				</div>
 			</div>
 			<div className="myId">
-				{/* <TextField
-					id="filled-basic"
-					label="Name"
-					variant="filled"
-					value={name}
-					onChange={(e) => setName(e.target.value)}
-					style={{ marginBottom: "20px" }}
-				/>
-				<CopyToClipboard text={me} style={{ marginBottom: "2rem" }}>
-					<Button variant="contained" color="primary" startIcon={<AssignmentIcon fontSize="large" />}>
-						Copy ID
-					</Button>
-				</CopyToClipboard>
-
-				<TextField
-					id="filled-basic"
-					label="ID to call"
-					variant="filled"
-					value={idToCall}
-					onChange={(e) => setIdToCall(e.target.value)}
-				/> */}
 				<div className="call-button">
 					{callAccepted && !callEnded ? (
 						<Button variant="contained" color="secondary" onClick={leaveCall}>
